@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light px-3 custom-navbar position-relative">
+    <!-- Top section -->
+    <div class="d-flex align-items-center">
+      <img src="shop.png" alt="Shop Logo" class="shop-logo me-2">
+      <a class="navbar-brand" href="index.html">Shop</a>
+    </div>
+
+    <div class="ms-auto d-flex align-items-center">
+      <input id="searchInput" type="text" placeholder="Search products..." class="form-control me-3 search-bar">
+      <button id="toggleTheme" class="btn btn-outline-secondary me-3 theme-btn">🌙</button>
+      <a href="cart.html" class="btn btn-primary position-relative cart-btn">
+        🛒 Cart
+        <span id="cartCount" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+          0
+        </span>
+      </a>
+    </div>
+
+    <!-- Centered vertical text & image -->
+    <div class="navbar-center-content">
+      <h1 class="vertical-text">It's Time For Shopping</h1>
+      <img src="logo.webp" alt="Shopping Logo" class="shopping-logo">
+    </div>
+  </nav>
+
+  <!-- Price Filter -->
+ <!-- 💎 Premium Price Filter -->
+<div class="container my-5 price-filter text-center">
+  <h2 class="filter-title">Set Your Perfect Price Range</h2>
+  <p class="filter-subtitle">Find the deal that fits your style 🛍️</p>
+
+ <!-- 🌈 Fancy Animated Price Filter -->
+<div class="container my-5 price-filter text-center">
+  <h2 class="filter-title">✨ Customize Your Shopping Range ✨</h2>
+  <p class="filter-subtitle">Slide to discover prices that match your vibe 💸</p>
+
+  <div class="slider-area mt-4 fade-in-up">
+    <span class="price-output" id="priceValue">$0</span>
+    <input type="range" id="priceRange" class="range-slider" min="0" max="1000" step="10">
+  </div>
+</div>
+
+<!-- 🛍️ Animated Products Section -->
+<div class="container products-section">
+  <div class="row" id="productsContainer">
+    <!-- Products will be dynamically injected here -->
+  </div>
+</div>
+
+
+<!-- 🌟 Stunning Footer Section -->
+<footer class="custom-footer text-center">
+  <div class="container footer-content">
+    
+    <h2 class="footer-logo">Shop</h2>
+    <p class="footer-tagline">Where style meets smart shopping 🛍️✨</p>
+
+    <div class="footer-links">
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Contact</a>
+      <a href="#">About Us</a>
+    </div>
+
+    <div class="social-icons mt-3">
+      <a href="#">📘</a>
+      <a href="#">📸</a>
+      <a href="#">🐦</a>
+      <a href="#">▶️</a>
+    </div>
+
+    <p class="mt-4 copyright">
+      © 2025 Shop. All Rights Reserved.
+    </p>
+
+  </div>
+</footer>
+
+
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
